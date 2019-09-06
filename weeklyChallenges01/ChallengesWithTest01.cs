@@ -49,11 +49,18 @@ namespace ChallengesWithTests01
 
         public string GetGreeting(string nameOfPerson)
         {
-            Console.WriteLine("What is your name?");
-            string name = Console.ReadLine();
 
-            Console.WriteLine($"Hello, {name}!");
-            return name;
+            if (nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+            else
+            {
+                return "Hello, " + nameOfPerson + "!";
+            }
+
+
+            
         }
         
 
