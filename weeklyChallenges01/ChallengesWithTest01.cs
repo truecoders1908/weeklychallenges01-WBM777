@@ -8,37 +8,66 @@ namespace ChallengesWithTests01
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            throw new NotImplementedException();
+            if (num1 == num2)
+            {
+                
+                return true;
+            }
+            else
+            {
+               
+                return false;
+            }
         }
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            double total;
+            total = minuend - subtrahend;
+            return total;
+            
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int total;
+            total = number1 + number2;
+            return total;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            return Math.Min(number1, number2);
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            long total;
+            total = factor1 * factor2;
+            return total;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+
+            if (nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+            else
+            {
+                return "Hello, " + nameOfPerson + "!";
+            }
+
+
+            
         }
+        
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return "HEY!";
+           
         }
     }
 }
